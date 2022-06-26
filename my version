@@ -1,0 +1,21 @@
+const A = "turpentine and turtles";
+const B = ["a", "e", "i", "o", "u"];
+const C = [];
+
+for (let i = 0; i < A.length; i++) {
+  for (let j = 0; j < B.length; j++) {
+    if (A[i] === B[j] && A[i] === "u") {
+      C.push(A[i].toUpperCase() + A[i].toUpperCase());
+    } else if (A[i] === B[j] && A[i] === "e") {
+      C.push(A[i].toUpperCase() + A[i].toUpperCase());
+    } else if (A[i] === B[j] && A[i] === "i") {
+      C.push(A[i].toUpperCase());
+    } else if (A[i] === B[j] && A[i] === "o") {
+      C.push(A[i].toUpperCase());
+    } else if (A[i] === B[j] && A[i] === "a") {
+      C.push(A[i].toUpperCase());
+    }
+  }
+}
+console.log(C.join(""));
+// prints "UUEEIEEAUUEE"
